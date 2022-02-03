@@ -63,9 +63,119 @@ a:hover:after {
 body {
     background-image: url(indexbg.jpg);
     background-size: auto;
-
-    
+    font-family: 'Cormorant Garamond', serif;
+    color: #fff;
+    margin: 0;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0 0 13px 0;
+}
+
+a {
+  color: #fff;
+}
+
+.center { 
+  text-align: center; 
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+}
+
+.container {
+  width: 95%;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.episode {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  position: relative;
+}
+
+.episode__number {
+  font-size: 4vw;
+  font-weight: 600;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  height: calc(10vw + 20px);
+  transition: all 0.2s ease-in;
+  padding-right: 100px;
+}
+
+.episode__content {
+  border-top: 2px solid #fff;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 10px;
+  padding: 15px 0;
+}
+
+.episode__content .title {
+  font-weight: 600
+}
+
+.episode__content .story {
+  line-height: 26px;
+  float: left;
+
+}
+
+@media (max-width: 600px) {
+  .episode__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .episode__content .story {
+    font-size: 15px;
+  }
+}
+
+.images {
+  opacity: 0.8;
+  float: left;
+  width: 50%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  filter: grayscale(50%);
+  
+}
+.images:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.lastimage {
+  opacity: 0.8;
+  float: left;
+  width: 50%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 200px;
+  filter: grayscale(50%);
+  
+}
+.lastimage:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+
 
 
 </style>
@@ -80,6 +190,52 @@ body {
     <a href="contact.html">CONTACT</a>
     <a href="about.html">ABOUT</a>
   </div>
+
+  <div class="container">
+    <h1 class="center">works</h1>
+    
+    <article class="episode">
+      <div class="episode__number">Liiku</div>
+      <div class="episode__content">
+        <div class="title">A Fitness Application Prototype Made Using Figma.</div>
+        <div class="story">
+
+          <p>Liiku was a joint effort with a fellow student, where we built a fully functional prototype using Figma.</p>
+          <p>Aesthetics, Use Experience design and functionality were made by me.</p>
+          <a href="https://taneliperala.wordpress.com/liiku/" target="_blank"><img class="images" src="liikuapp.PNG" alt="Liiku Application"></a>
+    
+        </div>
+      </div>
+    </article>
+    
+    <article class="episode">
+      <div class="episode__number">Vessa.info</div>
+      <div class="episode__content">
+        <div class="title">A web application that shows nearby public bathrooms in the Pääkaupunkiseutu area.</div>
+        <div class="story">
+          <p>Vessa.info was created with a team of other students.</p>
+          <p>I came up with the actual idea for the application, and built the User Interface and participated in the User Experience design.</p>
+          <p>Vessa.info was created using React.js, and Material UI.</p>
+          <a href="https://vessa.info/" target="_blank"><img class="images" src="vessainfo.PNG" alt="Vessa.info Application"></a>
+
+
+     
+        </div>
+      </div>
+    </article>
+    
+    <article class="episode">
+      <div class="episode__number">GoseBeats</div>
+      <div class="episode__content">
+        <div class="title">GoseBeats is an audiovisual project I work on my spare time.</div>
+        <div class="story">
+          <p>Gosebeats is an audiovisual project, where I produce beats using Ableton ("instrumentals") and accompany them with graphics designs made using Artrage and GIMP.</p>
+          <p>I designed a website for this project using SquareSpace, maintaining both a protfolio and a webshop.</p>
+          <a href="https://www.gosebeats.com/shop" target="_blank"><img class="lastimage" src="beats.PNG" alt="GoseBeats Webshop"></a>
+        </div>
+      </div>
+    </article>
+
 
 
 </body>
