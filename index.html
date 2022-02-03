@@ -8,6 +8,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@100;900&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
 
 
 <style>
@@ -29,10 +32,10 @@
   font-family: 'Roboto', sans-serif;
   margin-left: 50px;
   margin-bottom: 100px;
-  margin-top: 100px;
   font-kerning: normal;
   letter-spacing: 5px;
   position: relative;
+  display: inline-block
  
 }
 
@@ -82,6 +85,10 @@ a:hover:after {
 body {
     background-image: url(indexbg.jpg);
     background-size: auto;
+    display:grid;
+    height:100%;
+    width: 100%;
+    place-items:center;
 }
 
 
@@ -96,9 +103,96 @@ body {
   font-family: 'Roboto', sans-serif;
   margin-top: 100px;
   margin-left: 50px;
+  margin-bottom: 50px;
   font-kerning: normal;
   letter-spacing: 10px;
 
+}
+
+.wrapper{
+  display:inline-flex;
+  margin-bottom: 100px;
+  opacity: 0.8;
+}
+.wrapper .icon{
+  margin: 0 20px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  position: relative;
+  z-index:2;
+}
+.wrapper .icon span{
+  position:relative;
+  z-index:2;
+  height: 60px;
+  width: 60px;
+  display:block;
+  background: #fff;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  border-radius:50%;
+  text-align:center;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon span i{
+  font-size:25px;
+  line-height:60px;
+}
+.wrapper .icon .tooltip{
+  position:absolute;
+  top:0px;
+  background: #fff;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  font-size: 20px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  color:white;
+  opacity:0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip{
+  opacity:1;
+  pointer-events: auto;
+  top:-70px;
+}
+.wrapper .icon .tooltip:before{
+  position:absolute;
+  content:"";
+  height:15px;
+  width:15px;
+  bottom:-8px;
+  left:50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+.wrapper .icon:hover span,
+.wrapp .icon:hover .tooltip{
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+.wrapper .icon:hover span{
+  color: #fff;
+}
+
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip:before{
+  background:#fbad50;
+}
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip:before{
+  background:#333;
+}
+.wrapper .wordpress:hover span,
+.wrapper .wordpress:hover .tooltip,
+.wrapper .wordpress:hover .tooltip:before{
+  background:#00a0d2;
+}
+
+.links {
+  color: inherit;
 }
 
 
@@ -129,6 +223,32 @@ body {
       <div class="maintext">
 
         <p>Freelance Web Designer based in <b>Helsinki.</b> <br> Here you can find <b>projects</b> I've worked on. <br> </p> <p>Contact me through my <i>contact form</i>,<br> or on my social media pages linked below.</p>
+
+
+      </div>
+
+      <div>
+        <div class="wrapper">
+          
+          <a  class= "links" href="https://www.instagram.com/tanelipulla/" target="_blank">
+          <div class="icon instagram">
+            <div class="tooltip">Instagram</div>
+            <span><i class="fab fa-instagram"></i></span>
+          </div>
+          </a>
+          <a  class= "links" href="https://github.com/AvGoose" target="_blank">
+      <div class="icon github">
+            <div class="tooltip">GitHub</div>
+            <span><i class="fab fa-github"></i></span>
+          </div>
+        </a>
+        <a  class= "links" href="https://taneliperala.wordpress.com/" target="_blank">
+      <div class="icon wordpress">
+            <div class="tooltip">WordPress</div>
+            <span><i class="fab fa-wordpress-simple"></i></span>
+          </div>
+        </a>
+      </div>
 
 
       </div>
