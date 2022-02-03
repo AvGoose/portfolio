@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+
+
+<style>
+
+.topnav {
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+
+}
+
+.topnav a {
+  color: #ffffff;
+  text-align: center;
+  padding: 8px 8px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 50px;
+  font-kerning: normal;
+  letter-spacing: 5px;
+  position: relative;
+ 
+}
+
+.topnav a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+
+}
+
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+.topnav a:hover {
+  color: rgb(54, 71, 61);
+  position: relative;
+
+}
+
+body {
+    background-image: url(indexbg.jpg);
+    background-size: auto;
+
+    
+}
+
+
+</style>
+<script src=""></script>
+
+
+<body>
+    
+
+  <div class="topnav">
+    <a class="active" href="index.html">HOME</a>
+    <a href="works.html">WORKS</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="about.html">ABOUT</a>
+  </div>
+
+
+
+</body>
+</html>
