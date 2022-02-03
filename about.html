@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>Page Title</title>
+<title>About</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@100;900&display=swap" rel="stylesheet">
 
 
 
@@ -69,13 +69,49 @@ body {
 
 #taneli {
   display: block;
-  margin-left: auto;  
-  margin-right: auto;
   border-radius: 50%;
   max-width: 20%;
-  opacity: 0.5;
-  margin-top: 200px;
+  opacity: 0.6;
+  float: right;
+  margin-right: 200px;
+  margin-top:  200px;
 
+}
+
+@media (max-width: 692px)
+{
+  #taneli
+  {
+    display: none;
+  }
+
+
+}
+
+#maintext {
+  color: #ffffff;
+  padding: 8px 8px;
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  font-kerning: normal;
+  letter-spacing: 4px;
+  position: relative;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+#linktext {
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  font-kerning: normal;
+  letter-spacing: 4px;
+  font-family: 'Cormorant Garamond', serif;
+  float: right;
+  text-align: right;
 }
 
 
@@ -92,9 +128,34 @@ body {
     <a href="about.html">ABOUT</a>
   </div>
 
-  <div>
+  <div class="textimg">
+
     <img  id= "taneli" src="taneli.jpg" alt="Taneli Perälän omakuva">
-  </div>
+    <br>
+
+    <p id="maintext">Hi. I'm a computer sciences student from <b>Helsinki, Finland.</b>
+      My interests are mostly confined to all things visual: <b>UI design, Web Design, Graphics Design, and 3D-Modelling.</b>
+      Besides all things nerdy, I produce music, design tattoos, and play video games.
+    </p>
+    <p id="maintext">
+      <br>
+      <br>
+      <a id="linktext" href="https://www.gosebeats.com/" target="_blank">Click here to see some of my freelance work. <br> All visuals ans music is made by me.</a>
+      <br>
+
+      
+      
+
+
+    </p>
+
+
+
+
+
+</div>
+
+
 
 
 
