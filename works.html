@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
 
 
@@ -29,7 +30,7 @@
   font-kerning: normal;
   letter-spacing: 5px;
   position: relative;
-  padding: 20px 20px;
+  padding: 15px 15px;
   align-content: center;
  
 }
@@ -63,9 +64,11 @@ a:hover:after {
 body {
     background-image: url(indexbg.jpg);
     background-size: auto;
-    font-family: 'Cormorant Garamond', serif;
-    color: #fff;
-    margin: 0;
+    display:grid;
+    height:100%;
+    max-width: 100%;
+    place-items:center;
+    
 }
 
 *,
@@ -74,112 +77,74 @@ body {
   box-sizing: border-box;
 }
 
-p {
-  margin: 0 0 13px 0;
-}
-
-a {
-  color: #fff;
-}
-
-.center { 
-  text-align: center; 
-  padding-top: 100px;
-  padding-bottom: 100px;
-
-}
-
-.container {
-  width: 95%;
-  max-width: 1220px;
+.main{
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.episode {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  position: relative;
+
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
 }
 
-.episode__number {
-  font-size: 4vw;
-  font-weight: 600;
-  padding: 10px 0;
-  position: sticky;
-  top: 0;
-  text-align: center;
-  height: calc(10vw + 20px);
-  transition: all 0.2s ease-in;
-  padding-right: 100px;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.episode__content {
-  border-top: 2px solid #fff;
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-gap: 10px;
-  padding: 15px 0;
+.cards_item {
+  display: flex;
+  padding: 1rem;
 }
 
-.episode__content .title {
-  font-weight: 600
-}
-
-.episode__content .story {
-  line-height: 26px;
-  float: left;
-
-}
-
-@media (max-width: 600px) {
-  .episode__content {
-    grid-template-columns: 1fr;
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
   }
 }
 
-@media (max-width: 576px) {
-  .episode__content .story {
-    font-size: 15px;
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
   }
 }
 
-.images {
-  opacity: 0.8;
-  float: left;
-  width: 50%;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  filter: grayscale(50%);
-  
-}
-.images:hover {
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+.card {
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
-.lastimage {
-  opacity: 0.8;
-  float: left;
-  width: 50%;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  margin-top: 20px;
-  margin-bottom: 200px;
-  filter: grayscale(50%);
-  
-}
-.lastimage:hover {
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+.card_content {
+  padding: 1rem;
+  background: #ffffff;
 }
 
+.card_title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
 
-
+.card_text {
+  color: #000000;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
 
 </style>
-<script src=""></script>
 
 
 <body>
@@ -191,52 +156,69 @@ a {
     <a href="about.html">ABOUT</a>
   </div>
 
-  <div class="container">
-    <h1 class="center">works<br><br>click the images for details</h1>
-    
-    <article class="episode">
-      <div class="episode__number">Liiku</div>
-      <div class="episode__content">
-        <div class="title">A Fitness Application Prototype Made Using Figma.</div>
-        <div class="story">
-
-          <p>Liiku was a joint effort with a fellow student, where we built a fully functional prototype using Figma.</p>
-          <p>Aesthetics, Use Experience design and functionality were made by me.</p>
-          <a href="https://taneliperala.wordpress.com/liiku/" target="_blank"><img class="images" src="liikuapp.PNG" alt="Liiku Application"></a>
-    
+  <div class="main">
+    <ul class="cards">
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+          <div class="card_content">
+            <h2 class="card_title">VESSA.INFO</h2>
+            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          </div>
         </div>
-      </div>
-    </article>
-    
-    <article class="episode">
-      <div class="episode__number">Vessa.info</div>
-      <div class="episode__content">
-        <div class="title">A web application that shows nearby public bathrooms in the Pääkaupunkiseutu area.</div>
-        <div class="story">
-          <p>Vessa.info was created with a team of other students.</p>
-          <p>I came up with the actual idea for the application, and built the User Interface and participated in the User Experience design.</p>
-          <p>Vessa.info was created using React.js, and Material UI.</p>
-          <a href="https://vessa.info/" target="_blank"><img class="images" src="vessainfo.PNG" alt="Vessa.info Application"></a>
-
-
-     
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+          <div class="card_content">
+            <h2 class="card_title">Card Grid Layout</h2>
+            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+            <button class="btn card_btn">Read More</button>
+          </div>
         </div>
-      </div>
-    </article>
-    
-    <article class="episode">
-      <div class="episode__number">GoseBeats</div>
-      <div class="episode__content">
-        <div class="title">GoseBeats is an audiovisual project I work on my spare time.</div>
-        <div class="story">
-          <p>Gosebeats is an audiovisual project, where I produce beats using Ableton ("instrumentals") and accompany them with graphics designs made using Artrage and GIMP.</p>
-          <p>I designed a website for this project using SquareSpace, maintaining both a protfolio and a webshop.</p>
-          <a href="https://www.gosebeats.com/shop" target="_blank"><img class="lastimage" src="beats.PNG" alt="GoseBeats Webshop"></a>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
+          <div class="card_content">
+            <h2 class="card_title">Card Grid Layout</h2>
+            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+            <button class="btn card_btn">Read More</button>
+          </div>
         </div>
-      </div>
-    </article>
-
-
-
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div>
+          <div class="card_content">
+            <h2 class="card_title">Card Grid Layout</h2>
+            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+            <button class="btn card_btn">Read More</button>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></div>
+          <div class="card_content">
+            <h2 class="card_title">Card Grid Layout</h2>
+            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+            <button class="btn card_btn">Read More</button>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></div>
+          <div class="card_content">
+            <h2 class="card_title">Card Grid Layout</h2>
+            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+            <button class="btn card_btn">Read More</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
 </body>
 </html>
