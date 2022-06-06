@@ -29,7 +29,7 @@
   font-kerning: normal;
   letter-spacing: 5px;
   position: relative;
-  padding: 20px 20px;
+  padding: 15px 15px;
   align-content: center;
  
 }
@@ -60,83 +60,78 @@ a:hover:after {
 
 }
 
-body {
-    background-image: url(indexbg.jpg);
-    background-size: auto;
-
-    
-}
-
-#taneli {
-  display: block;
-  border-radius: 50%;
-  max-width: 40%;
-  opacity: 0.5;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top:  100px;
-  width: 30%;
-}
-
-
-
-#maintext {
+.maintext {
   color: #ffffff;
+  text-align: center;
   padding: 8px 8px;
   text-decoration: none;
   font-size: 30px;
-  margin-left: 50px;
   margin-bottom: 100px;
   margin-top: 100px;
   font-kerning: normal;
   letter-spacing: 4px;
   position: relative;
   font-family: 'Cormorant Garamond', serif;
+
 }
 
-#linktext {
+body {
+    background-image: url(indexbg.jpg);
+    background-size: auto;
+}
+
+#toptext {
+
   color: #ffffff;
-  text-decoration: none;
-  margin-bottom: 100px;
-  margin-top: 100px;
-  font-kerning: normal;
+  text-align: left;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 10px;
+  align-content: center;
+  width: 300px;
+  padding: 500px;
+
+}
+
+#taneli {
+  display: block;
+  max-width: 40%;
+  opacity: 0.6;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top:  100px;
+
+}
+
+#maintext {
+  color: #ffffff;
+  font-size: 30px;
   letter-spacing: 4px;
+  position: relative;
   font-family: 'Cormorant Garamond', serif;
-  float: right;
-  text-align: right;
-  margin-bottom: 200px;
-}
+  
 
-h1 {
-    color: #ffffff;
-    padding: 8px 8px;
-    text-decoration: none;
-    font-size: 30px;
-    margin-bottom: 100px;
-    margin-top: 100px;
-    font-kerning: normal;
-    letter-spacing: 4px;
-    position: relative;
-    font-family: 'Cormorant Garamond', serif;
-    text-align: center;
-    
 }
-
 
 </style>
-<script src=""></script>
 
 
 <body>
     
   <div class="topnav">
     <a class="active" href="index.html">HOME</a>
-    <a href="works.html">WORKS</a>
+    <a href="works.html">PROJECTS</a>
     <a href="contact.html">CONTACT</a>
     <a href="about.html">ABOUT</a>
   </div>
 
-  <h1>about me</h1>
+  <h1 id="toptext">HI,</h1>
+
+  
+  <p id="maintext">Hi. I'm a computer sciences student from <b>Helsinki, Finland.</b>
+    My interests are mostly confined to all things visual: <b>UI design, Web Design, Graphic Design, and 3D-Modelling.</b>
+    Besides all things nerdy, I produce music, design tattoos, and play video games.
+  </p>
 
   <div class="textimg">
 
@@ -145,17 +140,7 @@ h1 {
     
     <br>
 
-    <p id="maintext">Hi. I'm a computer sciences student from <b>Helsinki, Finland.</b>
-      My interests are mostly confined to all things visual: <b>UI design, Web Design, Graphic Design, and 3D-Modelling.</b>
-      Besides all things nerdy, I produce music, design tattoos, and play video games.
-    </p>
-    <p id="maintext">
-      <a id="linktext" href="https://www.gosebeats.com/" target="_blank">Click here to see a snippet of my freelance work. <br> All visuals and music are made by me.</a> <br> <br> <br>
-    </p>
 
-    <p id="maintext">You can check out some of my projects through the <b>"WORKS"</b> -tab. <br>
-
-    </p>
 
 </div>
 
