@@ -71,6 +71,19 @@ body {
     
 }
 
+.toptext {
+
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-kerning: normal;
+    letter-spacing: 15px;
+}
+
+
 *,
 *::before,
 *::after {
@@ -120,6 +133,7 @@ img {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  
 }
 
 .card_content {
@@ -138,10 +152,14 @@ img {
 
 .card_text {
   color: #000000;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;    
-  font-weight: 400;
+  font-size: 1.5em;
+  position: relative;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: justify;
+}
+
+.link {
+  text-decoration: none;
 }
 
 </style>
@@ -156,24 +174,32 @@ img {
     <a href="about.html">ABOUT</a>
   </div>
 
+  <div class="toptext">
+
+    <h1>PROJECTS</h1>
+    
+  </div>
+
   <div class="main">
     <ul class="cards">
       <li class="cards_item">
-        <div class="card">
+        <div class="card" >
+          <a href="liiku.html" class="link">
           <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
           <div class="card_content">
             <h2 class="card_title">VESSA.INFO</h2>
-            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+            <p class="card_text">Helping people find nearby public restrooms.</p>
           </div>
+          </a>
         </div>
       </li>
       <li class="cards_item">
-        <div class="card">
+        <div class="card" >
           <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
           <div class="card_content">
-            <h2 class="card_title">Card Grid Layout</h2>
-            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-            <button class="btn card_btn">Read More</button>
+            <h2 class="card_title">LIIKU</h2>
+            <p class="card_text">Fitness made easy and accessible for everyone - a fitness application prototype.</p>
+     
           </div>
         </div>
       </li>
@@ -183,7 +209,7 @@ img {
           <div class="card_content">
             <h2 class="card_title">Card Grid Layout</h2>
             <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-            <button class="btn card_btn">Read More</button>
+   
           </div>
         </div>
       </li>
@@ -193,7 +219,7 @@ img {
           <div class="card_content">
             <h2 class="card_title">Card Grid Layout</h2>
             <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-            <button class="btn card_btn">Read More</button>
+
           </div>
         </div>
       </li>
@@ -203,7 +229,7 @@ img {
           <div class="card_content">
             <h2 class="card_title">Card Grid Layout</h2>
             <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-            <button class="btn card_btn">Read More</button>
+
           </div>
         </div>
       </li>
@@ -213,7 +239,7 @@ img {
           <div class="card_content">
             <h2 class="card_title">Card Grid Layout</h2>
             <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-            <button class="btn card_btn">Read More</button>
+
           </div>
         </div>
       </li>
