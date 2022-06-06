@@ -95,8 +95,6 @@ body {
   margin: 0 auto;
 }
 
-
-
 img {
   height: auto;
   max-width: 100%;
@@ -133,25 +131,26 @@ img {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  width: 100%;
+  margin: 10px;
   
 }
 
-.card_content {
-  padding: 1rem;
-  background: #ffffff;
-}
 
 .card_title {
   color: #ffffff;
-  font-size: 1.5rem;
-  letter-spacing: 5px;
-  margin: 0px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
   font-family: 'Roboto', sans-serif;
-  color: black;
+  font-kerning: normal;
+  letter-spacing: 5px;
+  position: relative;
+  align-content: center;
 }
 
 .card_text {
-  color: #000000;
+  color: #ffffff;
   font-size: 1.5em;
   position: relative;
   font-family: 'Cormorant Garamond', serif;
@@ -176,7 +175,7 @@ img {
 
   <div class="toptext">
 
-    <h1>PROJECTS</h1>
+    <h1>MAIN</h1>
     
   </div>
 
@@ -185,66 +184,77 @@ img {
       <li class="cards_item">
         <div class="card" >
           <a href="liiku.html" class="link">
-          <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+          <div class="card_image"><img src="vessalogo.png"></div>
           <div class="card_content">
             <h2 class="card_title">VESSA.INFO</h2>
-            <p class="card_text">Helping people find nearby public restrooms.</p>
+            <p class="card_text">Helping people find nearby public restrooms in the Helsinki Metropolitan area.</p>
+          </div>
+          </a>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="gosebeatslogo.jpg"></div>
+          <div class="card_content">
+            <h2 class="card_title">GOSEBEATS</h2>
+            <p class="card_text">Unique beats for unique people - an e-store for hip-hop and electronic instrumentals.</p>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card" >
+          <div class="card_image"><img src="liikulogo2.png"></div>
+          <div class="card_content">
+            <h2 class="card_title">LIIKU</h2>
+            <p class="card_text">Fitness made easy and accessible for everyone - an application prototype.</p>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <div class="toptext">
+
+    <h1>SIDE</h1>
+    
+  </div>
+
+  <div class="main">
+    <ul class="cards">
+      <li class="cards_item">
+        <div class="card" >
+          <a href="liiku.html" class="link">
+          <div class="card_image"><img src="vessalogo.png"></div>
+          <div class="card_content">
+            <h2 class="card_title">VESSA.INFO</h2>
+            <p class="card_text">Helping people find nearby public restrooms in the Helsinki Metropolitan area.</p>
           </div>
           </a>
         </div>
       </li>
       <li class="cards_item">
         <div class="card" >
-          <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+          <div class="card_image"><img src="liikulogo2.png"></div>
           <div class="card_content">
             <h2 class="card_title">LIIKU</h2>
-            <p class="card_text">Fitness made easy and accessible for everyone - a fitness application prototype.</p>
-     
+            <p class="card_text">Fitness made easy and accessible for everyone - an application prototype.</p>
           </div>
         </div>
       </li>
       <li class="cards_item">
         <div class="card">
-          <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
+          <div class="card_image"><img src="gosebeatslogo.jpg"></div>
           <div class="card_content">
-            <h2 class="card_title">Card Grid Layout</h2>
-            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-   
-          </div>
-        </div>
-      </li>
-      <li class="cards_item">
-        <div class="card">
-          <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div>
-          <div class="card_content">
-            <h2 class="card_title">Card Grid Layout</h2>
-            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-
-          </div>
-        </div>
-      </li>
-      <li class="cards_item">
-        <div class="card">
-          <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></div>
-          <div class="card_content">
-            <h2 class="card_title">Card Grid Layout</h2>
-            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-
-          </div>
-        </div>
-      </li>
-      <li class="cards_item">
-        <div class="card">
-          <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></div>
-          <div class="card_content">
-            <h2 class="card_title">Card Grid Layout</h2>
-            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-
+            <h2 class="card_title">GOSEBEATS</h2>
+            <p class="card_text">Unique beats for unique people - an e-store for hip-hop and electronic instrumentals.</p>
           </div>
         </div>
       </li>
     </ul>
   </div>
+
+  
   
 </body>
 </html>
