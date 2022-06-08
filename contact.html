@@ -6,86 +6,86 @@
 <link rel="stylesheet" href="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@100;900&display=swap"
+  rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
 
 
 <style>
+  .topnav {
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
 
-.topnav {
-  overflow: hidden;
-  padding-top: 50px;
-  padding-bottom: 20px;
-  text-align: center;
+  }
 
-}
+  .topnav a {
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-kerning: normal;
+    letter-spacing: 5px;
+    position: relative;
+    padding: 15px 15px;
+    align-content: center;
 
-.topnav a {
-  color: #ffffff;
-  text-align: center;
-  text-decoration: none;
-  font-size: 30px;
-  font-family: 'Roboto', sans-serif;
-  font-kerning: normal;
-  letter-spacing: 5px;
-  position: relative;
-  padding: 15px 15px;
-  align-content: center;
- 
-}
+  }
 
-.topnav a:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
+  .topnav a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
 
-}
+  }
 
-a:hover:after { 
-  width: 100%; 
-  left: 0; 
-}
+  a:hover:after {
+    width: 100%;
+    left: 0;
+  }
 
 
-.topnav a:hover {
-  color: rgb(54, 71, 61);
-  position: relative;
+  .topnav a:hover {
+    color: rgb(54, 71, 61);
+    position: relative;
 
-}
+  }
 
-.maintext {
-  color: #ffffff;
-  text-align: center;
-  padding: 8px 8px;
-  text-decoration: none;
-  font-size: 30px;
-  margin-bottom: 100px;
-  margin-top: 100px;
-  font-kerning: normal;
-  letter-spacing: 4px;
-  position: relative;
-  font-family: 'Cormorant Garamond', serif;
+  .maintext {
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size: 30px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    font-kerning: normal;
+    letter-spacing: 4px;
+    position: relative;
+    font-family: 'Cormorant Garamond', serif;
 
-}
+  }
 
-body {
+  body {
     background-image: url(indexbg.jpg);
     background-size: auto;
-    display:grid;
-    height:100%;
+    display: grid;
+    height: 100%;
     max-width: 100%;
-    place-items:center;
-}
+    place-items: center;
+  }
 
-.email {
+  .email {
     color: #ffffff;
     padding: 8px 8px;
     text-decoration: none;
@@ -97,10 +97,10 @@ body {
     position: relative;
     font-family: 'Cormorant Garamond', serif;
     text-align: center;
-    
-}
 
-.toptext {
+  }
+
+  .toptext {
 
     color: #ffffff;
     text-align: center;
@@ -110,14 +110,44 @@ body {
     margin-bottom: 100px;
     font-kerning: normal;
     letter-spacing: 15px;
-}
+  }
 
+  .card {
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    color: #ffffff;
 
+  }
 
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+
+  button:hover,
+  a:hover {
+    opacity: 0.7;
+  }
 </style>
 
 <body>
-    
+
 
   <div class="topnav">
     <a class="active" href="index.html">HOME</a>
@@ -129,12 +159,26 @@ body {
   <div class="toptext">
 
     <h1>CONTACT</h1>
-    
+
   </div>
 
- 
+  <div class="card">
+    <img src="taneli2.PNG" alt="Taneli Perälän omakuva" style="width:100%">
+    <h1>Taneli Perälä</h1>
+    <div style="margin: 24px 0;">
+      <a href="#"><i class="fa fa-dribbble"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+    </div>
+  </div>
 
-<h1 class="email">taneliemil@gmail.com <br><br> @tanelipulla</h1>
-  
+
+
+
+
+  <h1 class="email">taneliemil@gmail.com <br><br> @tanelipulla</h1>
+
 </body>
+
 </html>
