@@ -6,123 +6,142 @@
 <link rel="stylesheet" href="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@100;900&display=swap"
-    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@100;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
 
 <style>
-    .topnav {
-        overflow: hidden;
-        padding-top: 50px;
-        padding-bottom: 20px;
-        text-align: center;
 
-    }
+.topnav {
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
 
-    .topnav a {
-        color: #ffffff;
-        text-align: center;
-        text-decoration: none;
-        font-size: 30px;
-        font-family: 'Roboto', sans-serif;
-        font-kerning: normal;
-        letter-spacing: 5px;
-        position: relative;
-        padding: 15px 15px;
-        align-content: center;
+}
 
-    }
+.topnav a {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-kerning: normal;
+  letter-spacing: 5px;
+  position: relative;
+  padding: 15px 15px;
+  align-content: center;
+ 
+}
 
-    .topnav a:after {
-        background: none repeat scroll 0 0 transparent;
-        bottom: 0;
-        content: "";
-        display: block;
-        height: 2px;
-        left: 50%;
-        position: absolute;
-        background: #fff;
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
-        width: 0;
+.topnav a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
 
-    }
+}
 
-    a:hover:after {
-        width: 100%;
-        left: 0;
-    }
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
 
 
-    .topnav a:hover {
-        color: rgb(54, 71, 61);
-        position: relative;
+.topnav a:hover {
+  color: rgb(54, 71, 61);
+  position: relative;
 
-    }
+}
 
-    .maintext {
-        color: #000000;
-        text-align: center;
-        font-size: 30px;
-        font-family: 'Roboto', sans-serif;
-        letter-spacing: 2px;
-    }
+.maintext {
+  color: #ffffff;
+  text-align: justify;
+  padding: 8px 8px;
+  text-decoration: none;
+  font-size: 30px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  font-kerning: normal;
+  letter-spacing: 2px;
+  position: relative;
+  font-family: 'Cormorant Garamond', serif;
 
-    body {
-        background-image: url(indexbg.jpg);
-        background-size: auto;
-        display: grid;
-        height: 100%;
-        max-width: 100%;
-        place-items: center;
-    }
+}
 
-    .toptext {
+body {
+    background-image: url(indexbg.jpg);
+    background-size: auto;
+    display:grid;
+    height:100%;
+    max-width: 100%;
+    place-items:center;
+}
 
-        color: #000000;
-        text-align: center;
-        font-size: 28px;
-        font-family: 'Roboto', sans-serif;
-        font-kerning: normal;
-        letter-spacing: 15px;
-    }
+.toptext {
 
-    .flex-container {
-        display: flex;
-        background-color: rgb(255, 255, 255);
-        flex-direction: column;
-        padding: 10px;
-        margin: 10px;
-    }
+  color: #ffffff;
+  text-align: center;
+  font-size: 4vw;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-kerning: normal;
+  letter-spacing: 15px;
+  
+}
+
+.linky {
+    text-decoration: none;
+    color: white;
+}
+
+mark {
+    background-color: #1b6dc1;
+    color: #fff;
+
+
+}
+
+
 </style>
 
 
 <body>
-
+    
     <div class="topnav">
         <a class="active" href="index.html">HOME</a>
         <a href="works.html">PROJECTS</a>
         <a href="contact.html">CONTACT</a>
         <a href="about.html">ABOUT</a>
-    </div>
+      </div>
 
-    <div class="flex-container">
+      <div class="toptext">
 
-        <div class="toptext">
-
-            <h1>VESSA.INFO</h1>
-            <p class="maintext">A fitness app prototype</p>
-
-        </div>
+        <h1><mark>VESSA.INFO</mark></h1>
+        
+      </div>
 
 
-    </div>
+      <div class="maintext">
+
+        <p>Finding a public restroom nearby can become a hassle. This is why we created <mark><a class="linky" href="https://vessa.info/">vessa.info</a>.</mark></p><br>
+        <p>Finland alone </p>
+
+
+      </div>
 
 
 
+ 
 
 
 
 </body>
-
 </html>
