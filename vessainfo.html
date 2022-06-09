@@ -6,142 +6,187 @@
 <link rel="stylesheet" href="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@100;900&display=swap"
+    rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
 
 <style>
+    .topnav {
+        overflow: hidden;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        text-align: center;
 
-.topnav {
-  overflow: hidden;
-  padding-top: 50px;
-  padding-bottom: 20px;
-  text-align: center;
+    }
 
-}
+    .topnav a {
+        color: #ffffff;
+        text-align: center;
+        text-decoration: none;
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        font-kerning: normal;
+        letter-spacing: 5px;
+        position: relative;
+        padding: 15px 15px;
+        align-content: center;
 
-.topnav a {
-  color: #ffffff;
-  text-align: center;
-  text-decoration: none;
-  font-size: 30px;
-  font-family: 'Roboto', sans-serif;
-  font-kerning: normal;
-  letter-spacing: 5px;
-  position: relative;
-  padding: 15px 15px;
-  align-content: center;
- 
-}
+    }
 
-.topnav a:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
+    .topnav a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
 
-}
+    }
 
-a:hover:after { 
-  width: 100%; 
-  left: 0; 
-}
-
-
-.topnav a:hover {
-  color: rgb(54, 71, 61);
-  position: relative;
-
-}
-
-.maintext {
-  color: #ffffff;
-  text-align: justify;
-  padding: 8px 8px;
-  text-decoration: none;
-  font-size: 30px;
-  margin-bottom: 100px;
-  margin-top: 100px;
-  font-kerning: normal;
-  letter-spacing: 2px;
-  position: relative;
-  font-family: 'Cormorant Garamond', serif;
-
-}
-
-body {
-    background-image: url(indexbg.jpg);
-    background-size: auto;
-    display:grid;
-    height:100%;
-    max-width: 100%;
-    place-items:center;
-}
-
-.toptext {
-
-  color: #ffffff;
-  text-align: center;
-  font-size: 4vw;
-  font-family: 'Roboto', sans-serif;
-  margin-top: 100px;
-  margin-bottom: 30px;
-  font-kerning: normal;
-  letter-spacing: 15px;
-  
-}
-
-.linky {
-    text-decoration: none;
-    color: white;
-}
-
-mark {
-    background-color: #1b6dc1;
-    color: #fff;
+    a:hover:after {
+        width: 100%;
+        left: 0;
+    }
 
 
-}
+    .topnav a:hover {
+        color: rgb(54, 71, 61);
+        position: relative;
+
+    }
+
+    .maintext {
+        color: #ffffff;
+        text-align: justify;
+        padding: 8px 8px;
+        text-decoration: none;
+        font-size: 30px;
+        margin-bottom: 100px;
+        margin-top: 100px;
+        font-kerning: normal;
+        letter-spacing: 2px;
+        position: relative;
+        font-family: 'Cormorant Garamond', serif;
+        max-width: 1500px;
+
+    }
+
+    body {
+        background-image: url(indexbg3.png);
+        background-size: auto;
+        display: grid;
+        height: 100%;
+        max-width: 100%;
+        place-items: center;
+    }
+
+    .toptext {
+
+        color: #ffffff;
+        text-align: center;
+        font-size: 4vw;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 100px;
+        margin-bottom: 30px;
+        font-kerning: normal;
+        letter-spacing: 15px;
+
+    }
+
+    .title2 {
+
+        color: #ffffff;
+        text-align: left;
+        font-size: larger;
+        font-family: 'Roboto', sans-serif;
+        font-kerning: normal;
+        letter-spacing: 15px;
+        
+
+    }
+
+
+    .linky {
+        text-decoration: none;
+        color: white;
+    }
+
+    .markblue {
+        background-color: #1b6dc1;
+        color: #fff;
+    }
+
+    .markorange {
+        background-color: #c17f1b;
+        color: #fff;
+    }
 
 
 </style>
 
 
 <body>
-    
+
     <div class="topnav">
         <a class="active" href="index.html">HOME</a>
         <a href="works.html">PROJECTS</a>
         <a href="contact.html">CONTACT</a>
         <a href="about.html">ABOUT</a>
-      </div>
+    </div>
 
-      <div class="toptext">
+    <div class="toptext">
 
-        <h1><mark>VESSA.INFO</mark></h1>
+        <h1><mark class="markblue">VESSA.INFO</mark></h1>
+
+    </div>
+
+    
+
+    <div class="maintext">
+
+        <h4 class="title2">THE PROBLEM</h4>
+
+        <p>
+            
+            Finding a public restroom nearby can become a hassle. This is why we created <mark class="markblue"><a class="linky" href="https://vessa.info/">vessa.info</a></mark>, which shows
+            public restrooms available to the user using <mark class="markorange">Google Maps API</mark>. At the moment, the application covers only the Helsinki Metropolitan Area
+            (Helsinki, Espoo, Vantaa), but can be broadened to include databases from other areas as well.
+            Although Helsinki boasts an easy-to-use database covering the city's own public bathrooms, those do not account for other restrooms open to the public. Similarly, the data
+            used by Google Maps is at best, limited. 
+            Examples of locations not included in these services include:
+            <li>Shopping Malls</li>
+            <li>Libraries</li>
+            <li>Shops</li>
+            <li>Cafes</li>
+            <li>Railway Stations</li>
+            <li>Metro Stations</li>
+            <br>
+
+        <h4 class="title2">USERS</h4>
+
+        <p> </p>
+
+
+            
+    
         
-      </div>
-
-
-      <div class="maintext">
-
-        <p>Finding a public restroom nearby can become a hassle. This is why we created <mark><a class="linky" href="https://vessa.info/">vessa.info</a>.</mark></p><br>
-        <p>Finland alone </p>
-
-
-      </div>
+        
+        
+        </p>
+    
+    </div>
 
 
 
- 
+
 
 
 
 </body>
+
 </html>
