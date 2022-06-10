@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>Taneli Perälä</title>
+<title>VESSA.INFO</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,7 +65,7 @@
         text-align: justify;
         padding: 8px 8px;
         text-decoration: none;
-        font-size: 30px;
+        font-size: 25px;
         margin-bottom: 100px;
         margin-top: 100px;
         font-kerning: normal;
@@ -101,13 +101,21 @@
     .title2 {
 
         color: #ffffff;
-        text-align: left;
+        text-align: center;
         font-size: larger;
         font-family: 'Roboto', sans-serif;
         font-kerning: normal;
         letter-spacing: 15px;
-        
+    }
 
+    .title3 {
+
+        color: #ffffff;
+        text-align: center;
+        font-size: larger;
+        font-family: 'Roboto', sans-serif;
+        font-kerning: normal;
+        letter-spacing: 4px;
     }
 
 
@@ -121,12 +129,50 @@
         color: #fff;
     }
 
+
     .markorange {
-        background-color: #c17f1b;
+        background-color: #c1661b;
         color: #fff;
     }
 
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
+    }
+
+    .card {
+        margin: 20px;
+        padding: 20px;
+        min-height: 100px;
+        max-height: 150x;
+        display: grid;
+        grid-template-rows: 20px 50px 1fr 50px;
+        transition: all 0.2s;
+        width: 400px;
+
+    }
+
+    .card:hover {
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+        transform: scale(1.01);
+    }
+
+    /* CARD BACKGROUNDS */
+
+    .card-1 {
+        background: radial-gradient(#5182b3, #1b6dc1);
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 1600px) {
+        .cards {
+            justify-content: center;
+
+        }
+    }
 </style>
 
 
@@ -145,19 +191,23 @@
 
     </div>
 
-    
+
 
     <div class="maintext">
 
         <h4 class="title2">THE PROBLEM</h4>
 
         <p>
-            
-            Finding a public restroom nearby can become a hassle. This is why we created <mark class="markblue"><a class="linky" href="https://vessa.info/">vessa.info</a></mark>, which shows
-            public restrooms available to the user using <mark class="markorange">Google Maps API</mark>. At the moment, the application covers only the Helsinki Metropolitan Area
+
+            Finding a public restroom nearby can become a hassle. This is why we created <mark class="markblue"><a
+                    class="linky" href="https://vessa.info/" target="_blank">vessa.info</a></mark>, which shows
+            public restrooms available to the user using <mark class="markblue"><a class="linky"
+                    href="https://developers.google.com/maps" target="_blank">Google Maps API</a></mark>. At the moment,
+            the application covers only the Helsinki Metropolitan Area
             (Helsinki, Espoo, Vantaa), but can be broadened to include databases from other areas as well.
-            Although Helsinki boasts an easy-to-use database covering the city's own public bathrooms, those do not account for other restrooms open to the public. Similarly, the data
-            used by Google Maps is at best, limited. 
+            Although Helsinki boasts an easy-to-use database covering the city's own public bathrooms, those do not
+            account for other restrooms open to the public. Similarly, the data
+            used by Google Maps is at best, limited.
             Examples of locations not included in these services include:
             <li>Shopping Malls</li>
             <li>Libraries</li>
@@ -165,21 +215,66 @@
             <li>Cafes</li>
             <li>Railway Stations</li>
             <li>Metro Stations</li>
-            <br>
-
-        <h4 class="title2">USERS</h4>
-
-        <p> </p>
 
 
-            
-    
-        
-        
-        
-        </p>
-    
-    </div>
+            <h4 class="title2">USERS</h4>
+
+            <p>
+
+                Finland alone has over <mark class="markblue"><a class="linky"
+                        href="https://ibd.fi/tietoa-sairauksista/" target="_blank">50 000</a></mark> people suffering
+                from chronic gastrointestinal diagnoses.
+                The people facing these issues have a very common everyday problem: they need to use the bathroom more
+                frequently. At home, this is a non-issue, but during travels and daily commutes,
+                the problem is highlighted. To combat this, the IBD ja muut suolistosairaudet ry association has
+                implemented a nationwide
+                <mark class="markblue"><a class="linky" href="https://ibd.fi/viestinta/vessapassi/"
+                        target="_blank">Vessapassi, or Bathroom Pass program</a></mark>.
+                In essence, companies and other public locations can opt-in to the program and communicate to their
+                customers that they have implemented this system.
+                Then, the users with a Vessapassi can bypass lines or use the locations private bathroom - no questions
+                asked.
+                <br><br>
+                Besides those affected by chronic illness, there are a lot of other groups who need information about
+                public bathrooms - tourists, for example. I'm sure most of us
+                can relate to being in a foreign city trying to find a bathroom to use. The tourism trade is slowly
+                getting back to its feet after the COVID-19 pandemic,
+                and businesses are eager to house tourists once again. COVID-19 has skewed and cancelled the gathering
+                of recent data, but looking at pre-pandemic numbers
+                gives us an idea of how many trousists visit Finland on a yearly basis. In 2019, around
+                <mark class="markblue"><a class="linky"
+                        href="https://www.businessfinland.fi/suomalaisille-asiakkaille/palvelut/matkailun-edistaminen/tutkimukset-ja-tilastot/matkailuvuosi"
+                        target="_blank">3 million bednights were spent in the Helsinki metropolitan area, </a></mark>
+                nearing almost half of all bednights spent in Finland.
+                <br><br>
+                Residents themselves sometimes need to find bathrooms as well. Parents with young children often need
+                special bathrooms. People in wheelchairs need to know which
+                bathrooms they can access. Seniors might need to use the bathroom more often. People sitting in parks
+                during the summer - especially women - might want to find a
+                nicer bathroom than the overused public ones located in parks. This is all to say that
+                <mark class="markorange">different people have different needs in regards to bathrooms, and that
+                    information is not highly accessible at this moment</mark>.
+
+            </p>
+
+            <div class="main-container">
+                <div class="cards">
+                    <div class="card card-1">
+                        <h4 class="title3">50 000 +</h4> <br>
+                        <p>IBD, IBS, and other chronic gastrointestinal illness sufferers.</p>
+                    </div>
+                    <div class="card card-1">
+                        <h4 class="title3">3 000 000 +</h4> <br>
+                        <p>Bednights spent in Helsinki Metropolitan Area yearly.</p>
+                    </div>
+                    <div class="card card-1">
+                        <h4 class="title3">1 400 000 +</h4> <br>
+                        <p>People living in the Helsinki Metropolitan Area.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="title2">USERS</h4>
 
 
 
