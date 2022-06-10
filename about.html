@@ -6,7 +6,8 @@
 <link rel="stylesheet" href="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@100;900&display=swap"rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@100;900&display=swap"
+  rel="stylesheet">
 
 
 
@@ -85,7 +86,7 @@
     box-sizing: border-box;
   }
 
- 
+
 
   div#resume {
     min-width: 310px;
@@ -215,6 +216,35 @@
       margin-right: 20px
     }
   }
+
+  .button {
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Cormorant Garamond', serif;
+
+  }
+
+  .button1 {
+    background-color: white;
+    color: black;
+  }
+
+  .button1:hover {
+    background-color: #9c9c9c;
+    color: white;
+  }
+
+  .linky {
+    text-decoration: none;
+    color: rgb(114, 8, 8);
+  }
 </style>
 
 <body>
@@ -238,8 +268,14 @@
     <h1>TANELI PERÄLÄ</h1>
 
     <p id="objective">
-      
+      <a class= "linky" href="downloads/CV.pdf">
+      <button class="button button1">DOWNLOAD COVER LETTER</button> 
+      </a>
+      <br><br>
+
+
       I'm passionate about making products that feel good to use and look the part. <br>
+
 
 
     </p>
@@ -284,9 +320,15 @@
     <dl>
       <dt>Hobbies</dt>
       <dd>
-      <p>Music production | Reading | Video games | Making candles | Brewing beer | Creative writing</p>
-    </dd>
+        <p>Music production | Reading | Video games | Making candles | Brewing beer | Creative writing</p>
+      </dd>
     </dl>
+
+
+
+
+
+
 
   </div>
 
