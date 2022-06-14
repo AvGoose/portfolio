@@ -150,7 +150,7 @@
         display: grid;
         grid-template-rows: 20px 50px 1fr 50px;
         transition: all 0.2s;
-        width: 400px;
+        width: 350px;
 
     }
 
@@ -173,14 +173,16 @@
         width: 60%;
         margin: auto;
         display: block;
+        border: 1px solid rgb(255, 255, 255);
+        padding: 5px;
     }
 
     /* RESPONSIVE */
 
-    @media (max-width: 1600px) {
+    @media (max-width: 400px) {
         .cards {
             justify-content: center;
-            width: 350px;
+            max-width: 300px;
 
         }
     }
@@ -295,19 +297,38 @@
                 of Applied Sciences.
                 I came up with the idea itself, which lent me to conduct the user research detailed above. I am also
                 diagnosed with IBS, so I had
-                a real-life connection to the application of the product.
+                a real-life connection to the use-cases of the product.
                 <br><br>
                 With just a few months to work with, we decided on a modified SCRUM-framework implemented in a Working From Home -environment.
-                We used Trello to visualize and categorize schedules for sprints, to-dos, doings, and finished components. We implemented 
+                We used <mark class="markblue"><a class="linky" href="https://trello.com/" target="_blank">Trello</a></mark> 
+                to visualize and categorize schedules for sprints, to-dos, doings, and finished components. We implemented 
                 2-3 week sprints to fit our schedules, and had a bi-weekly sprint meeting. As we took on items from our backlog, we assigned
                 tasks according to interests and expertise. 
                 <br><br>
                 I took charge of prototyping the look of the app, building the User Interface, designing the color palette, as well as producing the logo.
-                The main technolgies we used were <b>REACT</b>, <b>Material UI</b>, and <b> Google Maps API</b>.
-
-
+                The main technolgies we used were <mark class="markblue"><a class="linky" href="https://reactjs.org/" target="_blank">React JS</a></mark>, 
+                <mark class="markblue"><a class="linky" href="https://mui.com/" target="_blank">Material UI</a></mark>, and 
+                <mark class="markblue"><a class="linky" href="https://developers.google.com/maps" target="_blank">Google Maps API</a></mark>.
+                We combined multiple open sources of bathrooms in the Helsinki mteropolitan area. Some sources used JSON-data, others XML, others something else.
+                For a simple solution, our team built a parser that standardizes the data to a single format, which the app uses. 
+                <mark class="markblue"><a class="linky" href="https://github.com/S1nd5/school-app" target="_blank">Here</a></mark> 
+                you can see the full source code on GitHub.
 
             </p>
+
+            <h4 class="title2">DESIGN CHOICES</h4>
+
+            <p>
+
+                For the app, I wanted to keep things simple, reponsive, and accessible to everyone. Accessibility was of high concern, because
+                end-users would be comprised of a large scale audience with very different backgrounds. This manifested in the use of clear, easy-to-read fonts,
+                a simple color palette, and mobile-first UI.
+
+            </p>
+            <br>
+
+            <img src="vessainfocollage.png" alt="Vessa.info pciture collage">
+
 
 
 
