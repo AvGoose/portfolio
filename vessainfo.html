@@ -152,6 +152,7 @@
         transition: all 0.2s;
         width: 350px;
 
+
     }
 
     .card:hover {
@@ -170,11 +171,15 @@
     }
 
     img {
-        width: 60%;
+        width: 100%;
         margin: auto;
         display: block;
         border: 1px solid rgb(255, 255, 255);
         padding: 5px;
+    }
+
+    #locationimg {
+        filter: grayscale(50%);
     }
 
     /* RESPONSIVE */
@@ -183,9 +188,9 @@
         .cards {
             justify-content: center;
             max-width: 300px;
-
         }
     }
+
 </style>
 
 
@@ -221,15 +226,11 @@
             Although Helsinki boasts an easy-to-use database covering the city's own public bathrooms, those do not
             account for other restrooms open to the public. Similarly, the data
             used by Google Maps is at best, limited.
-            Examples of locations not included in these services:
-            <ul>
-                <li>Shopping Malls</li>
-                <li>Libraries</li>
-                <li>Shops</li>
-                <li>Cafes</li>
-                <li>Railway Stations</li>
-                <li>Metro Stations</li>
-            </ul>
+            Examples of locations not included in these services are metro and train stations, cafes, public libraries, shops as well as shopping malls.
+
+            <br><br>
+
+            <img id="locationimg" src="locations.png" alt="Location images from list items">
 
 
             <h4 class="title2">USERS</h4>
@@ -322,7 +323,19 @@
 
                 For the app, I wanted to keep things simple, reponsive, and accessible to everyone. Accessibility was of high concern, because
                 end-users would be comprised of a large scale audience with very different backgrounds. This manifested in the use of clear, easy-to-read fonts,
-                a simple color palette, and mobile-first UI.
+                a simple color palette, and mobile-first UI. The user sees the <b>type</b> of bathroom when clicking on a marker, which helps in the 
+                categorization of information in map-view. The main navigational panel is located on the left, and it includes only relevant information, 
+                categorized in a hierarchy of importance from top down. 
+
+                <br><br>
+                
+                We wanted the users to be able to find bathroom to their specific needs, which is why we implemented location-based and type-based search methods.
+                Even with such a simple UI, we conducted A/B testing to determine if the chosen components worked the way we wanted them to. 
+                I also consulted the rest of my team regarding design choices, presenting different options. In the end, we're extremely happy with how 
+                the app works - and looks.
+                
+                
+
 
             </p>
             <br>
