@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>VESSA.INFO</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@100;900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+<style>
+    .topnav {
+        overflow: hidden;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        text-align: center;
+
+    }
+
+    .topnav a {
+        color: #ffffff;
+        text-align: center;
+        text-decoration: none;
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        font-kerning: normal;
+        letter-spacing: 5px;
+        position: relative;
+        padding: 15px 15px;
+        align-content: center;
+
+    }
+
+    .topnav a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+
+    }
+
+    a:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+
+    .topnav a:hover {
+        color: rgb(54, 71, 61);
+        position: relative;
+
+    }
+
+    .maintext {
+        color: #ffffff;
+        text-align: justify;
+        padding: 8px 8px;
+        text-decoration: none;
+        font-size: 25px;
+        margin-bottom: 100px;
+        margin-top: 100px;
+        font-kerning: normal;
+        letter-spacing: 2px;
+        position: relative;
+        font-family: 'Cormorant Garamond', serif;
+        max-width: 1500px;
+
+    }
+
+    body {
+        background-image: url(indexbg3.png);
+        background-size: auto;
+        display: grid;
+        height: 100%;
+        max-width: 100%;
+        place-items: center;
+    }
+
+    .toptext {
+
+        color: #ffffff;
+        text-align: center;
+        font-size: 4vw;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 100px;
+        margin-bottom: 30px;
+        font-kerning: normal;
+        letter-spacing: 15px;
+
+    }
+
+    .title2 {
+
+        color: #ffffff;
+        text-align: center;
+        font-size: larger;
+        font-family: 'Roboto', sans-serif;
+        font-kerning: normal;
+        letter-spacing: 12px;
+    }
+
+    .title3 {
+
+        color: #ffffff;
+        text-align: center;
+        font-size: larger;
+        font-family: 'Roboto', sans-serif;
+        font-kerning: normal;
+        letter-spacing: 4px;
+    }
+
+
+    .linky {
+        text-decoration: none;
+        color: white;
+    }
+
+    .markblue {
+        background-color: #1b6dc1;
+        color: #fff;
+    }
+
+
+    .markorange {
+        background-color: #c1661b;
+        color: #fff;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .card {
+        margin: 20px;
+        padding: 20px;
+        min-height: 100px;
+        max-height: 150x;
+        display: grid;
+        grid-template-rows: 20px 50px 1fr 50px;
+        transition: all 0.2s;
+        width: 350px;
+
+
+    }
+
+    .card:hover {
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+        transform: scale(1.01);
+    }
+
+    /* CARD BACKGROUNDS */
+
+    .card-1 {
+        background: radial-gradient(#5182b3, #1b6dc1);
+    }
+
+    ul {
+        list-style-type: square;
+    }
+
+    img {
+        width: 100%;
+        margin: auto;
+        display: block;
+        border: 1px solid rgb(255, 255, 255);
+        padding: 5px;
+    }
+
+    #locationimg {
+        filter: grayscale(50%);
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 400px) {
+        .cards {
+            justify-content: center;
+            max-width: 350px;
+        }
+    }
+
+</style>
+
+
+<body>
+
+    <div class="topnav">
+        <a class="active" href="index.html">HOME</a>
+        <a href="works.html">PROJECTS</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="about.html">ABOUT</a>
+    </div>
+
+    <div class="toptext">
+
+        <h1><mark class="markblue">VESSA.INFO</mark></h1>
+
+
+    </div>
+
+
+
+
+    <div class="maintext">
+
+        <h4 class="title2">THE PROBLEM</h4>
+
+        <br><br>
+
+        
+
+        <p>
+
+            Finding a public restroom nearby can become a hassle. This is why we created <mark class="markblue"><a
+                    class="linky" href="https://vessa.info/" target="_blank">vessa.info</a></mark>, which shows
+            public restrooms available to the user using <mark class="markblue"><a class="linky"
+                    href="https://developers.google.com/maps" target="_blank">Google Maps API</a></mark>. At the moment,
+            the application covers only the Helsinki Metropolitan Area
+            (Helsinki, Espoo, Vantaa), but can be broadened to include databases from other areas as well.
+            Although Helsinki boasts an easy-to-use database covering the city's own public bathrooms, those do not
+            account for other restrooms open to the public. Similarly, the data
+            used by Google Maps is at best, limited.
+            Examples of locations not included in these services are metro and train stations, cafes, public libraries, shops as well as shopping malls.
+
+            <br><br>
+
+            <h2>Public restrooms can be hard to find, even though they're everywhere.</h2>
+            
+            <br><br>
+
+            <img id="locationimg" src="locations.png" alt="Location images from list items">
+
+            
+            <br><br>
+
+            <h4 class="title2">USERS</h4>
+
+            <br><br>
+
+            <p>
+
+                Finland alone has over <mark class="markblue"><a class="linky"
+                        href="https://ibd.fi/tietoa-sairauksista/" target="_blank">50 000</a></mark> people suffering
+                from chronic gastrointestinal diagnoses.
+                The people facing these issues have a very common everyday problem: they need to use the bathroom more
+                frequently. At home, this is a non-issue, but during travels and daily commutes,
+                the problem is highlighted. To combat this, the <b>IBD ja muut suolistosairaudet ry</b> association has
+                implemented a nationwide
+                <mark class="markblue"><a class="linky" href="https://ibd.fi/viestinta/vessapassi/"
+                        target="_blank">Vessapassi, or Bathroom Pass program</a></mark>.
+                In essence, companies and other public locations can opt-in to the program and communicate to their
+                customers that they have implemented this system.
+                Then, the users with a Vessapassi can bypass lines or use the locations private bathroom - no questions
+                asked.
+                <br><br>
+                Besides those affected by chronic illness, there are a lot of other groups who need information about
+                public bathrooms - tourists, for example. I'm sure most of us
+                can relate to being in a foreign city trying to find a bathroom to use. The tourism trade is slowly
+                getting back to its feet after the COVID-19 pandemic,
+                and businesses are eager to house tourists once again. COVID-19 has skewed and cancelled the gathering
+                of recent data, but looking at pre-pandemic numbers
+                gives us an idea of how many trousists visit Finland on a yearly basis. In 2019, around
+                <mark class="markblue"><a class="linky"
+                        href="https://www.businessfinland.fi/suomalaisille-asiakkaille/palvelut/matkailun-edistaminen/tutkimukset-ja-tilastot/matkailuvuosi"
+                        target="_blank">3 million bednights were spent in the Helsinki metropolitan area, </a></mark>
+                nearing almost half of all bednights spent in Finland.
+                <br><br>
+                Local residents sometimes need to find bathrooms as well. Parents with young children often need
+                special bathrooms. People in wheelchairs need to know which
+                bathrooms they can access. Seniors might need to use the bathroom more often. People sitting in parks
+                during the summer - especially women - might want to find a
+                nicer bathroom than the overused public ones located in parks. This is all to say that
+                <b>different people have different needs in regards to bathrooms, and that
+                    information is not highly accessible at this moment</b>.
+
+            </p>
+
+            <br><br>
+
+            <div class="main-container">
+                <div class="cards">
+                    <div class="card card-1">
+                        <h4 class="title3">50,000 +</h4> <br>
+                        <p>IBD, IBS, and other chronic gastrointestinal illness sufferers.</p>
+                    </div>
+                    <div class="card card-1">
+                        <h4 class="title3">3,000,000 +</h4> <br>
+                        <p>Bednights spent in Helsinki Metropolitan Area yearly.</p>
+                    </div>
+                    <div class="card card-1">
+                        <h4 class="title3">1,400,000 +</h4> <br>
+                        <p>People living in the Helsinki Metropolitan Area.</p>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+            <h4 class="title2">MAKING THE APP</h4>
+
+            <br><br>
+
+            <p>
+
+                Working as a team of five, we ideated the application for an innovation course at Haaga-Helia University
+                of Applied Sciences.
+                I came up with the idea itself, which lent me to conduct the user research detailed above. I am also
+                diagnosed with IBS, so I had
+                a real-life connection to the use-cases of the product.
+                <br><br>
+                With just a few months to work with, we decided on a modified SCRUM-framework implemented in a Working From Home -environment.
+                We used <mark class="markblue"><a class="linky" href="https://trello.com/" target="_blank">Trello</a></mark> 
+                to visualize and categorize schedules for sprints, to-dos, doings, and finished components. We implemented 
+                2-3 week sprints to fit our schedules, and had a bi-weekly sprint meeting. As we took on items from our backlog, we assigned
+                tasks according to interests and expertise. 
+                <br><br>
+                I took charge of prototyping the look of the app, building the User Interface, designing the color palette, as well as producing the logo.
+                The main technolgies we used were <mark class="markblue"><a class="linky" href="https://reactjs.org/" target="_blank">React JS</a></mark>, 
+                <mark class="markblue"><a class="linky" href="https://mui.com/" target="_blank">Material UI</a></mark>, and 
+                <mark class="markblue"><a class="linky" href="https://developers.google.com/maps" target="_blank">Google Maps API</a></mark>.
+                We combined multiple open sources of bathrooms in the Helsinki mteropolitan area. Some sources used JSON-data, others XML, others something else.
+                For a simple solution, our team built a parser that standardizes the data to a single format, which the app uses. 
+                <mark class="markblue"><a class="linky" href="https://github.com/S1nd5/school-app" target="_blank">Here</a></mark> 
+                you can see the full source code on GitHub.
+
+            </p>
+
+            <br><br>
+
+            <h4 class="title2">DESIGN CHOICES</h4>
+
+            <br><br>
+
+            <h2>I wanted to keep things simple, reponsive, and accessible. </h2>
+
+            <br><br>
+
+            <p>
+
+                Accessibility was of high concern, because
+                end-users would be comprised of a large scale audience with very different backgrounds. This manifested in the use of clear, easy-to-read fonts,
+                a simple color palette, and mobile-first UI. The user sees the <b>type</b> of bathroom when clicking on a marker, which helps in the 
+                categorization of information in map-view. The main navigational panel is located on the left, and it includes only relevant information, 
+                categorized in a hierarchy of importance from top down. 
+
+                <br><br>
+                
+                We wanted the users to be able to find bathroom to their specific needs, which is why we implemented location-based and type-based search methods.
+                Even with such a simple UI, we conducted A/B testing to determine if the chosen components worked the way we wanted them to. 
+                I also consulted the rest of my team regarding design choices, presenting different options. In the end, we're extremely happy with how 
+                the app works - and looks.
+                
+                
+
+
+            </p>
+            <br>
+
+            <img src="vessainfocollage.png" alt="Vessa.info pciture collage">
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
