@@ -125,22 +125,77 @@
     }
 
     .markred {
-        background-color: #be0a0a;
+        background-color: #a91c04;
         color: #fff;
     }
 
+    .mySlides {
+        display: none
+    }
+
     img {
-        width: 100%;
+        vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
         margin: auto;
-        display: block;
-        border: 1px solid rgb(255, 255, 255);
-        padding: 5px;
+        padding: 50px;
     }
 
-    h2 {
-        text-align: center;
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
     }
 
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 0.8s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .5
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+        .prev,
+        .next,
+        .text {
+            font-size: 11px
+        }
+    }
 </style>
 
 
@@ -153,15 +208,94 @@
         <a href="about.html">ABOUT</a>
     </div>
 
+    
+
     <div class="toptext">
 
         <h1><mark class="markred">ADOMANZIUS</mark></h1>
 
-        <div id="mainposts">
+    </div>
+
+    <div class="maintext">
+
+        <p>
+
+            These animation loops were made using the open-source software <mark class="markred"><a class="linky" href="https://www.blender.org/" target="_blank">Blender 3D</a></mark>. <br>
+            Check out my Instagram for recent updates <mark class="markred"><a class="linky" href="https://www.instagram.com/adomanzius/" target="_blank">here</a></mark>. 
+
+
+        </p>
 
 
 
+        
+
+
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <video width="100%" controls>
+                <source src="loopvideo1.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
         </div>
+
+        <div class="mySlides fade">
+            <video width="100%" controls>
+                <source src="loopvideo2.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+
+        <div class="mySlides fade">
+            <video width="100%" controls>
+                <source src="loopvideo3.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+
 
 </body>
 
