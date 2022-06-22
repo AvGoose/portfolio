@@ -3,21 +3,21 @@
 <meta charset="UTF-8">
 <title>About</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@100;900&display=swap"
-  rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@100;900&display=swap" rel="stylesheet">
 
 
 
 <style>
+
+/* NAVIGATION */
+
   .topnav {
     overflow: hidden;
     padding-top: 50px;
     padding-bottom: 20px;
     text-align: center;
-
   }
 
   .topnav a {
@@ -31,7 +31,6 @@
     position: relative;
     padding: 15px 15px;
     align-content: center;
-
   }
 
   .topnav a:after {
@@ -45,7 +44,6 @@
     background: #fff;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
-
   }
 
   a:hover:after {
@@ -53,11 +51,9 @@
     left: 0;
   }
 
-
   .topnav a:hover {
     color: rgb(54, 71, 61);
     position: relative;
-
   }
 
   body {
@@ -67,11 +63,9 @@
     height: 100%;
     max-width: 100%;
     place-items: center;
-
   }
 
   .toptext {
-
     color: #ffffff;
     text-align: center;
     font-size: 28px;
@@ -82,11 +76,11 @@
     letter-spacing: 15px;
   }
 
+/* RESUME STYLE */
+
   * {
     box-sizing: border-box;
   }
-
-
 
   div#resume {
     min-width: 310px;
@@ -116,7 +110,6 @@
     letter-spacing: 4px;
     font-size: 23px;
   }
-
 
   div#resume p {
     margin: 0 0 16px 0;
@@ -159,14 +152,12 @@
   div#resume dl {
     display: table-row;
     font-size: 18px;
-
   }
 
   div#resume dl dt,
   div#resume dl dd {
     display: table-cell;
     padding-bottom: 20px;
-
   }
 
   div#resume dl dd {
@@ -183,6 +174,8 @@
     width: 20%;
   }
 
+/* RESPONSIVE */
+
   @media screen and (max-width:1100px) {
     div#resume h2 span {
       position: relative;
@@ -198,12 +191,10 @@
     }
   }
 
-
   @media screen and (max-width:320px) {
     body {
       margin: 0
     }
-
 
     div#resume {
       width: 320px;
@@ -216,6 +207,8 @@
       margin-right: 20px
     }
   }
+
+  /* BUTTON & SPECIAL STYLES */
 
   .button {
     border: none;
@@ -231,7 +224,6 @@
     font-weight: bold;
     font-size: 25px;
     text-align: left;
-
   }
 
   .button1 {
@@ -254,11 +246,11 @@
     color: #000000;
   }
 
-
-
 </style>
 
 <body>
+
+<!-- NAVIGATION -->
 
   <div class="topnav">
     <a class="active" href="index.html">HOME</a>
@@ -267,14 +259,15 @@
     <a href="about.html">ABOUT</a>
   </div>
 
+<!-- TITLE -->
 
   <div class="toptext">
 
     <h1>ABOUT</h1>
-
-
-
+    
   </div>
+
+<!-- RESUME -->
 
   <div id="resume">
     <img src="images/taneli.jpg" alt="Picture of Taneli sitting at his computer">
@@ -283,23 +276,26 @@
     <p id="objective">
 
       I'm passionate about making products that feel good to use and look the part.
+      
       <br>
 
     </p>
+
+<!-- EDUCATION -->
 
     <dl>
       <dt><mark id="markwhite">Education</mark>
       <dd>
         <h2>Haaga-Helia University of Applied Sciences (2020 -)</h2>
         <p>Programme in Business Information Technology</p>
-
         <h2>Pop & Jazz Conservatory (2017-2019)</h2>
         <p>Musician Major in Electric Guitar</p>
-
         <h2>Vaskivuori High School (Graduated 2017)</h2>
         <p>High School Diploma</p>
-
     </dl>
+
+<!-- SKILLS -->
+
     <dl>
       <dt><mark id="markwhite">Skills</mark>
       <dd>
@@ -311,29 +307,32 @@
         <h4>Know something about:</h4>
         <p>JavaScript<br><br>Python<br><br>React<br><br>Linux<br><br>Apache<br><br>Web Hosting </p>
     </dl>
+
+<!-- EXPERIENCE -->
+
     <dl>
       <dt><mark id="markwhite">Experience</mark>
       <dd>
         <h2>Akateeminen Kirjakauppa, Helsinki</h2>
         <h4>Warehouse worker / salesperson</h4>
         <p>2019-2020</p>
-
         <h2>HEKA Länsi Oy</h2>
         <h4>Maintenance worker / summer job</h4>
         <p>Summers 2012-2018</p>
-
       </dd>
     </dl>
+
+<!-- HOBBIES -->
+
     <dl>
       <dt><mark id="markwhite">Hobbies</mark></dt>
       <dd>
         <h2>Things I do for fun</h2>
-
         <p>Music production<br><br>Reading<br><br>Video games<br><br>Making candles<br><br>Brewing beer<br><br>Creative writing</p>
       </dd>
-      
     </dl>
-    
+
+<!-- DOWNLOAD LINK -->
 
     <p id="objective">
       <a class= "linky" href="downloads/CV.pdf">
@@ -342,26 +341,7 @@
       <br><br>
     </p>
 
-
-
-
-
-
-
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 

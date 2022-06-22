@@ -3,21 +3,21 @@
 <meta charset="UTF-8">
 <title>ADOMANZIUS</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@100;900&display=swap"
-    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@100;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-
 <style>
+
+
+/* NAVIGATION */
+
     .topnav {
         overflow: hidden;
         padding-top: 50px;
         padding-bottom: 20px;
         text-align: center;
-
     }
 
     .topnav a {
@@ -31,7 +31,6 @@
         position: relative;
         padding: 15px 15px;
         align-content: center;
-
     }
 
     .topnav a:after {
@@ -45,7 +44,6 @@
         background: #fff;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
-
     }
 
     a:hover:after {
@@ -57,8 +55,9 @@
     .topnav a:hover {
         color: rgb(54, 71, 61);
         position: relative;
-
     }
+
+/* TEXT AND BODY */
 
     .maintext {
         color: #ffffff;
@@ -73,7 +72,6 @@
         position: relative;
         font-family: 'Cormorant Garamond', serif;
         max-width: 1500px;
-
     }
 
     body {
@@ -86,7 +84,6 @@
     }
 
     .toptext {
-
         color: #ffffff;
         text-align: center;
         font-size: 4vw;
@@ -95,11 +92,9 @@
         margin-bottom: 30px;
         font-kerning: normal;
         letter-spacing: 15px;
-
     }
 
     .title2 {
-
         color: #ffffff;
         text-align: center;
         font-size: larger;
@@ -109,7 +104,6 @@
     }
 
     .title3 {
-
         color: #ffffff;
         text-align: center;
         font-size: larger;
@@ -118,6 +112,7 @@
         letter-spacing: 4px;
     }
 
+/* SPECIAL */
 
     .linky {
         text-decoration: none;
@@ -129,15 +124,16 @@
         color: #fff;
     }
 
-    .mySlides {
-        display: none
-    }
-
     img {
         vertical-align: middle;
     }
 
-    /* Slideshow container */
+/* SLIDESHOW */
+
+    .mySlides {
+        display: none
+    }
+
     .slideshow-container {
         max-width: 1000px;
         position: relative;
@@ -145,7 +141,6 @@
         padding: 50px;
     }
 
-    /* Next & previous buttons */
     .prev,
     .next {
         cursor: pointer;
@@ -162,7 +157,6 @@
         user-select: none;
     }
 
-    /* Position the "next button" to the right */
     .next {
         right: 0;
     }
@@ -171,7 +165,6 @@
         left: 0;
     }
 
-    /* Fading animation */
     .fade {
         animation-name: fade;
         animation-duration: 0.8s;
@@ -187,19 +180,21 @@
         }
     }
 
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 300px) {
+/* RESPONSIVE */
 
+    @media only screen and (max-width: 300px) {
         .prev,
         .next,
         .text {
             font-size: 11px
         }
     }
+
 </style>
 
-
 <body>
+
+<!-- NAVIGATION -->
 
     <div class="topnav">
         <a class="active" href="index.html">HOME</a>
@@ -208,7 +203,7 @@
         <a href="about.html">ABOUT</a>
     </div>
 
-    
+<!-- MAIN TEXT -->
 
     <div class="toptext">
 
@@ -222,8 +217,6 @@
 
         <br><br>
 
-
-
         <p>
 
             These animation loops were made using the open-source software <mark class="markred"><a class="linky" href="https://www.blender.org/" target="_blank">Blender 3D</a></mark>.
@@ -233,12 +226,9 @@
 
         </p>
 
-
-
-        
-
-
     </div>
+
+<!-- VIDEO SLIDESHOW -->
 
     <div class="slideshow-container">
 
@@ -267,9 +257,13 @@
         <a class="next" onclick="plusSlides(1)">❯</a>
 
     </div>
+
     <br>
 
+<!-- SLIDESHOW SCRIPT -->
+
     <script>
+
         let slideIndex = 1;
         showSlides(slideIndex);
 
@@ -300,9 +294,8 @@
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
         }
+
     </script>
-
-
 
 </body>
 

@@ -3,21 +3,21 @@
 <meta charset="UTF-8">
 <title>VESSA.INFO</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@100;900&display=swap"
-    rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
 
 <style>
+
+/* NAVIGATION */
+
     .topnav {
         overflow: hidden;
         padding-top: 50px;
         padding-bottom: 20px;
         text-align: center;
-
     }
 
     .topnav a {
@@ -31,7 +31,6 @@
         position: relative;
         padding: 15px 15px;
         align-content: center;
-
     }
 
     .topnav a:after {
@@ -45,7 +44,6 @@
         background: #fff;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
-
     }
 
     a:hover:after {
@@ -53,12 +51,12 @@
         left: 0;
     }
 
-
     .topnav a:hover {
         color: rgb(54, 71, 61);
         position: relative;
-
     }
+
+/* TEXT & BODY */
 
     .maintext {
         color: #ffffff;
@@ -73,7 +71,6 @@
         position: relative;
         font-family: 'Cormorant Garamond', serif;
         max-width: 1500px;
-
     }
 
     body {
@@ -86,7 +83,6 @@
     }
 
     .toptext {
-
         color: #ffffff;
         text-align: center;
         font-size: 4vw;
@@ -95,11 +91,9 @@
         margin-bottom: 30px;
         font-kerning: normal;
         letter-spacing: 15px;
-
     }
 
     .title2 {
-
         color: #ffffff;
         text-align: center;
         font-size: larger;
@@ -109,7 +103,6 @@
     }
 
     .title3 {
-
         color: #ffffff;
         text-align: center;
         font-size: larger;
@@ -118,6 +111,7 @@
         letter-spacing: 4px;
     }
 
+/* SPECIAL */
 
     .linky {
         text-decoration: none;
@@ -129,17 +123,17 @@
         color: #fff;
     }
 
-
     .markorange {
         background-color: #c1661b;
         color: #fff;
     }
 
+/* CARDS */
+
     .cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
     }
 
     .card {
@@ -151,8 +145,6 @@
         grid-template-rows: 20px 50px 1fr 50px;
         transition: all 0.2s;
         width: 350px;
-
-
     }
 
     .card:hover {
@@ -160,7 +152,7 @@
         transform: scale(1.01);
     }
 
-    /* CARD BACKGROUNDS */
+/* CARD BACKGROUNDS & SPECIAL */
 
     .card-1 {
         background: radial-gradient(#5182b3, #1b6dc1);
@@ -185,7 +177,7 @@
         text-align: center;
     }
 
-    /* RESPONSIVE */
+/* RESPONSIVE */
 
     @media (max-width: 400px) {
         .cards {
@@ -199,6 +191,8 @@
 
 <body>
 
+<!-- NAVIGATION -->
+
     <div class="topnav">
         <a class="active" href="index.html">HOME</a>
         <a href="works.html">PROJECTS</a>
@@ -206,23 +200,21 @@
         <a href="about.html">ABOUT</a>
     </div>
 
+<!-- TITLE -->
+
     <div class="toptext">
 
         <h1><mark class="markblue">VESSA.INFO</mark></h1>
 
-
     </div>
 
-
-
+<!-- MAIN TEXT -->
 
     <div class="maintext">
 
         <h4 class="title2">THE PROBLEM</h4>
 
         <br><br>
-
-        
 
         <p>
 
@@ -254,15 +246,13 @@
 
             <p>
 
-                Finland alone has over <mark class="markblue"><a class="linky"
-                        href="https://ibd.fi/tietoa-sairauksista/" target="_blank">50 000</a></mark> people suffering
+                Finland alone has over <mark class="markblue"><a class="linky" href="https://ibd.fi/tietoa-sairauksista/" target="_blank">50 000</a></mark> people suffering
                 from chronic gastrointestinal diagnoses.
                 The people facing these issues have a very common everyday problem: they need to use the bathroom more
                 frequently. At home, this is a non-issue, but during travels and daily commutes,
                 the problem is highlighted. To combat this, the <b>IBD ja muut suolistosairaudet ry</b> association has
                 implemented a nationwide
-                <mark class="markblue"><a class="linky" href="https://ibd.fi/viestinta/vessapassi/"
-                        target="_blank">Vessapassi, or Bathroom Pass program</a></mark>.
+                <mark class="markblue"><a class="linky" href="https://ibd.fi/viestinta/vessapassi/" target="_blank">Vessapassi, or Bathroom Pass program</a></mark>.
                 In essence, companies and other public locations can opt-in to the program and communicate to their
                 customers that they have implemented this system.
                 Then, the users with a Vessapassi can bypass lines or use the locations private bathroom - no questions
@@ -279,9 +269,7 @@
                 and businesses are eager to house tourists once again. COVID-19 has skewed and cancelled the gathering
                 of recent data, but looking at pre-pandemic numbers
                 gives us an idea of how many trousists visit Finland on a yearly basis. In 2019, around
-                <mark class="markblue"><a class="linky"
-                        href="https://www.businessfinland.fi/suomalaisille-asiakkaille/palvelut/matkailun-edistaminen/tutkimukset-ja-tilastot/matkailuvuosi"
-                        target="_blank">3 million bednights were spent in the Helsinki metropolitan area, </a></mark>
+                <mark class="markblue"><a class="linky" href="https://www.businessfinland.fi/suomalaisille-asiakkaille/palvelut/matkailun-edistaminen/tutkimukset-ja-tilastot/matkailuvuosi" target="_blank">3 million bednights were spent in the Helsinki metropolitan area, </a></mark>
                 nearing almost half of all bednights spent in Finland. 
                 <br><br>
                 Local residents need to find public bathrooms as well. Parents with young children often need
@@ -289,12 +277,13 @@
                 bathrooms they can access. Seniors might need to use the bathroom more often. People sitting in parks
                 during the summer - especially women - might want to find a
                 nicer bathroom than the overused public ones located in parks. This is all to say that
-                <b>different people have different needs in regards to bathrooms, and that
-                    information is not highly accessible at this moment</b>.
+                <b>different people have different needs in regards to bathrooms, and that information is not highly accessible at this moment</b>.
 
             </p>
 
             <br><br>
+
+<!-- CARDS -->
 
             <div class="main-container">
                 <div class="cards">
@@ -314,6 +303,8 @@
             </div>
 
             <br><br>
+
+<!-- MAIN TEXT CONTINUES -->
 
             <h4 class="title2">MAKING THE APP</h4>
 
@@ -348,18 +339,13 @@
 
             <h4 class="title2">FROM PROTOTYPE TO PRODUCT</h4>
 
-
             <br><br>
 
-          
             <p>
 
                 Before I could program the UI, I made simple prototypes to visualize the UI and UX goals for our team.
                 The prototype was a quick mock-up which mostly centered on accessibility features and how information is displayed, with a possible color-palette.
                 Having the map itself be the focal point and main component of the app was crucial, with a hidden side-menu for other components.
-
-                
-
 
             </p>
 
@@ -370,12 +356,11 @@
             <br>
 
             <h2>I wanted to keep things simple, reponsive, and accessible. </h2>
+
             <br>
 
-
             <p>
-
-                
+    
                 While programming the UI I added all of the search-components to the sidebar-menu. We wanted to keep it to its absolute minimum, so as not to make the process
                 of searching for bathrooms complex or hard-to-do. The information displayed is in a hierarchical top-down form. By pressing the "Käytä sijaintia"
                 button the program automatically shows your location on the map - the easiest way to find nearby bathrooms. Below that the user has the 
@@ -395,9 +380,9 @@
                 We conducted A/B testing to determine if the chosen components worked the way we wanted them to. 
                 I also consulted the rest of my team regarding design choices, presenting different options. In the end, we're extremely happy with how 
                 the app works - and looks.
-                
 
             </p>
+
             <br>
 
             <img src="images/vessainfocollage.png" alt="Vessa.info picture collage">
@@ -420,16 +405,6 @@
                 Even with very limited prior experience in design, with the help of a good idea and a talented team, I feel like we built a great product.
 
             </p>
-
-
-
-
-
-
-
-
-
-
 
 </body>
 
