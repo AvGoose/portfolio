@@ -61,7 +61,7 @@
   }
 
   body {
-    background-image: url(indexbg3.png);
+    background-image: url(images/indexbg3.png);
     background-size: auto;
     display: grid;
     height: 100%;
@@ -141,15 +141,15 @@
   }
 
   #objective {
-    font-size: larger;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-size: xx-large;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    line-height: normal;
   }
 
   div#resume dt {
-    font-style: italic;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     text-align: left;
     padding: 0 26px 0 0;
     width: 120px;
@@ -228,6 +228,9 @@
     transition-duration: 0.4s;
     cursor: pointer;
     font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left;
 
   }
 
@@ -245,6 +248,14 @@
     text-decoration: none;
     color: rgb(114, 8, 8);
   }
+
+  #markwhite {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+
+
 </style>
 
 <body>
@@ -261,25 +272,26 @@
 
     <h1>ABOUT</h1>
 
+
+
   </div>
 
   <div id="resume">
-    <img src="taneli.jpg" alt="Picture of Taneli sitting at his computer">
+    <img src="images/taneli.jpg" alt="Picture of Taneli sitting at his computer">
     <h1>TANELI PERÄLÄ</h1>
 
     <p id="objective">
 
-      I'm passionate about making products that feel good to use and look the part. <br>
-
-
+      I'm passionate about making products that feel good to use and look the part.
+      <br>
 
     </p>
 
     <dl>
-      <dt>Education
+      <dt><mark id="markwhite">Education</mark>
       <dd>
         <h2>Haaga-Helia University of Applied Sciences (2020 -)</h2>
-        <p>Programme in Business Information Technology.</p>
+        <p>Programme in Business Information Technology</p>
 
         <h2>Pop & Jazz Conservatory (2017-2019)</h2>
         <p>Musician Major in Electric Guitar</p>
@@ -289,18 +301,18 @@
 
     </dl>
     <dl>
-      <dt>Skills
+      <dt><mark id="markwhite">Skills</mark>
       <dd>
-        <h2>Skills</h2>
-        <p>UX Design | UI Design | Graphic Design | Prototyping | User Research | Product Design | User Testing </p>
+        <h2>Skillsets</h2>
+        <p>UX Design<br><br>UI Design<br><br>Graphic Design<br><br>Prototyping<br><br>User Research<br><br>Product Design<br><br>User Testing </p>
         <h2>Technologies</h2>
         <h4>Well versed in:</h4>
-        <p>Figma | HTML | CSS | GIMP | Bootstrap | Ableton Live | Microsoft Office Tools</p>
+        <p>Figma<br><br>HTML<br><br>CSS<br><br>GIMP<br><br>Bootstrap<br><br>Ableton Live<br><br>Microsoft Office Tools</p>
         <h4>Know something about:</h4>
-        <p>JavaScript | Python | React | Linux | Apache | Web Hosting </p>
+        <p>JavaScript<br><br>Python<br><br>React<br><br>Linux<br><br>Apache<br><br>Web Hosting </p>
     </dl>
     <dl>
-      <dt>Experience
+      <dt><mark id="markwhite">Experience</mark>
       <dd>
         <h2>Akateeminen Kirjakauppa, Helsinki</h2>
         <h4>Warehouse worker / salesperson</h4>
@@ -313,15 +325,19 @@
       </dd>
     </dl>
     <dl>
-      <dt>Hobbies</dt>
+      <dt><mark id="markwhite">Hobbies</mark></dt>
       <dd>
-        <p>Music production | Reading | Video games | Making candles | Brewing beer | Creative writing</p>
+        <h2>Things I do for fun</h2>
+
+        <p>Music production<br><br>Reading<br><br>Video games<br><br>Making candles<br><br>Brewing beer<br><br>Creative writing</p>
       </dd>
+      
     </dl>
+    
 
     <p id="objective">
       <a class= "linky" href="downloads/CV.pdf">
-      <button class="button button1">DOWNLOAD COVER LETTER</button> 
+      <button class="button button1">DOWNLOAD RESUME</button> 
       </a>
       <br><br>
     </p>
