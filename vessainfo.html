@@ -58,8 +58,10 @@
 
 /* TEXT & BODY */
 
-    html,body {
-        overflow: hidden;
+    @media (max-width: 767px) {
+        body {
+            background-attachment: fixed;
+        }
     }
 
     .maintext {
