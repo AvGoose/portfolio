@@ -16,18 +16,10 @@
 
 .topnav {
   overflow: hidden;
-  padding-top: 50px;
+  padding-top: 49px;
   padding-bottom: 20px;
   text-align: center;
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-
 
 .topnav a {
   color: #ffffff;
@@ -67,6 +59,18 @@ a:hover:after {
 
 /* TEXT & BODY */
 
+
+
+body {
+    display: grid;
+    height: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    place-items: center;
+    background-color: black;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 .maintext {
   color: #ffffff;
   padding: 8px 8px;
@@ -82,29 +86,6 @@ a:hover:after {
   width: 70vw;
 }
 
-.subtitle {
-  color: rgb(179, 179, 179);
-  text-align: center;
-  padding: 1px 8px;
-  text-decoration: none;
-  font-size: 20px;
-  font-kerning: normal;
-  letter-spacing: 2px;
-  position: relative;
-  font-family: 'Roboto', sans-serif;
-  max-width: 100%;
-}
-
-
-body {
-    background-color: black;
-    background-size: auto;
-    display:grid;
-    height:100%;
-    max-width: 100%;
-    place-items:center;
-}
-
 .toptext {
   color: #ffffff;
   text-align: center;
@@ -114,7 +95,9 @@ body {
   margin-bottom: 10px;
   font-kerning: normal;
   letter-spacing: 15px;
+  font-size: 2vw;
 }
+
 
 /* LINK BUTTONS */
 
@@ -152,6 +135,14 @@ body {
         align-items: left;
     }
 
+    .maintext {
+        width: 90vw;
+      }
+
+    .toptext {
+      font-size: 8vw;
+    }
+
     .custom-button {
         margin: 10px 0; /* Adjust margin for vertical stacking */
         width: 100%; /* Make buttons full-width */
@@ -180,13 +171,6 @@ body {
       </div>
 
 <!-- MAIN TEXT -->
-
-
-<!--<div class="subtitle">
-  <p>
-    Digital design and other adjacent activities.
-  </p>
-</div> -->
 
       <div class="maintext">
 
